@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhiroop Sinharay</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #111 0%, #0a0a0a 60%);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Container */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+/* Header */
+
+.hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero span {
+    background: linear-gradient(90deg, #18d4c4, #00ffc3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+/* Sections */
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #18d4c4;
+    letter-spacing: 1px;
+}
+
+/* Glass Cards */
+
+.card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
+    padding: 25px;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border: 1px solid #18d4c4;
+}
+
+/* Skills Grid */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skills-grid ul {
+    margin-top: 10px;
+    padding-left: 18px;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+/* Experience Layout */
+
+.timeline {
+    display: flex;
+    gap: 20px;
+}
+
+.timeline-date {
+    min-width: 120px;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.timeline-content ul {
+    margin-top: 10px;
+    padding-left: 18px;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+/* Language Bars */
+
+.language {
+    margin-bottom: 15px;
+}
+
+.progress {
+    height: 6px;
+    background: #222;
+    border-radius: 10px;
+    margin-top: 6px;
+}
+
+.progress-fill {
+    height: 6px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #18d4c4, #00ffc3);
+}
+
+/* Links */
+
+.links a {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #18d4c4;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.links a:hover {
+    background: #18d4c4;
+    color: black;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .timeline {
+        flex-direction: column;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>ABHIROOP <span>SINHARAY</span></h1>
+        <p>Kolkata, India • +91 9147092888 • abhiroop.sinharay@gmail.com</p>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="section">
+        <div class="section-title">SUMMARY</div>
+        <div class="card">
+            Detail-oriented Computer Science student skilled in Python, Java, and Web Development.
+            Experienced in vulnerability assessments and phishing simulation projects.
+            Passionate about cybersecurity, software development, and building impactful solutions.
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+        <div class="section-title">SKILLS</div>
+        <div class="skills-grid">
+
+            <div class="card">
+                <strong>Programming</strong>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C / C++</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <strong>Web Development</strong>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <strong>Tools</strong>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <strong>Security</strong>
+                <ul>
+                    <li>Phishing Simulation</li>
+                    <li>Web Security Basics</li>
+                    <li>Input Validation</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+        <div class="section-title">EXPERIENCE</div>
+        <div class="card timeline">
+            <div class="timeline-date">
+                03/2025 – 04/2025
+            </div>
+            <div class="timeline-content">
+                <strong>Project Intern – Threat Prism</strong>
+                <ul>
+                    <li>Performed vulnerability assessments on web applications.</li>
+                    <li>Designed phishing simulation campaigns for awareness testing.</li>
+                    <li>Prepared technical security reports and mitigation plans.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+        <div class="section-title">EDUCATION</div>
+
+        <div class="card timeline" style="margin-bottom:15px;">
+            <div class="timeline-date">
+                08/2024 – 2028
+            </div>
+            <div class="timeline-content">
+                <strong>B.Tech – Computer Science & Engineering (Core)</strong><br>
+                Vellore Institute of Technology
+            </div>
+        </div>
+
+        <div class="card timeline">
+            <div class="timeline-date">
+                2025
+            </div>
+            <div class="timeline-content">
+                <strong>Higher Secondary (Class XII)</strong><br>
+                Delhi Public School, Ruby Park
+            </div>
+        </div>
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="section">
+        <div class="section-title">LANGUAGES</div>
+        <div class="card">
+            <div class="language">
+                English (C1)
+                <div class="progress"><div class="progress-fill" style="width:90%"></div></div>
+            </div>
+            <div class="language">
+                Hindi (B2)
+                <div class="progress"><div class="progress-fill" style="width:75%"></div></div>
+            </div>
+            <div class="language">
+                Bengali (B2)
+                <div class="progress"><div class="progress-fill" style="width:75%"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LINKS -->
+    <div class="section">
+        <div class="section-title">CONNECT</div>
+        <div class="links">
+            <a href="https://github.com/Abhiroop-Sinharay-19" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/abhiroop-sinha-ray-86a028324/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
